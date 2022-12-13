@@ -1,57 +1,69 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import Link from "next/link";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js 13!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://beta.nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js 13</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Explore the Next.js 13 playground.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates/next.js/app-directory?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>Deploy your Next.js site to a public URL with Vercel.</p>
-          </a>
-        </div>
+    <>
+      <Navbar />
+      <main className=" bg-[#072C4A] text-white">
+        <h1>Nós colocamos o seu Escritório de Advocacia na Internet!</h1>
+        <p>Seja no Tablet. Desktop. Celular</p>
+        <section>
+          <h2>
+            Ter um site que atraia e converta clientes é essencial para
+            construir uma carreira sólida na advocacia.{" "}
+            <i>De advogado para advogado.</i>
+          </h2>
+          <h2>Por que nos escolher para criar seu site?</h2>
+          <ul>
+            <li>Oferecemos um serviço totalmente personalizado.</li>
+            <li>
+              Nossa equipe de web designers oferecerá um site totalmente
+              exclusivo para você se diferenciar na internet!
+            </li>
+            <li>
+              Desenvolvemos sites rápidos, com excelente perfomance! Seu site
+              irá carregar com velocidade independente da velocidade de conexão
+              de internet.
+            </li>
+            <li>
+              Disponiblizamos planos com criação de conteúdo textual para o seu
+              blog! Possuimos redatores com experiência e o conhecimento
+              necessário para redigir textos de fácil entendimento para o
+              público.
+            </li>
+            <li>
+              Oferecemos serviço de automatização do WhatsApp de seu escritório!
+              Você poderá oferecer as melhores soluções aos seus clientes, mesmo
+              quando não estiver online!
+            </li>
+            <li>
+              <Link href={"/planos"}>Confira nossos Planos!</Link>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>O que entregamos aos nossos clientes?</h3>
+          <article>
+            Website com Icones para as redes sociais.
+            <p>Para Instagram, Linkedin, Facebook, Twitter...</p>
+          </article>
+          <article>
+            Sites adequados para motores de Busca (Google, Bing...)
+            <p>
+              Atraia clientes a partir de pesquisas nos principais motores de
+              busca!
+            </p>
+          </article>
+          <article>Carregamento Rápido</article>
+          <article>Compatíveis com Celular, Tablet e PC.</article>
+          <article>
+            Segurança.
+            <p>Todos nossos Websites incluem certificado SSL nativo. </p>
+          </article>
+        </section>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
-    </div>
-  )
+    </>
+  );
 }
