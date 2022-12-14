@@ -13,11 +13,11 @@ export default function CardsHome({
   alt: string;
 }) {
   return (
-    <div className=" max-h-[412px] w-96 border border-white shadow-md bg-secondary rounded-3xl">
+    <div className=" h-auto w-96 border border-white shadow-md bg-secondary rounded-3xl">
       <Image
         src={src}
-        width={200}
-        height={200}
+        width={100}
+        height={100}
         alt={alt}
         className=" mx-auto rounded-3xl my-6"
       />
