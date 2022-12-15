@@ -7,11 +7,11 @@ module.exports = {
   ],
   theme: {
     colors: {
-      primary: "#351330",
-      secondary: "#424254",
-      tercery: "#64908a",
-      quaternary: "#e8caa4",
-      quintary: "#cc2a41",
+      primary: "#2E3159",
+      secondary: "#273240",
+      tercery: "#49E1F2",
+      quaternary: "#F25430",
+      quintary: "#0D0D0D",
       white: "#FFFFFF",
       black: "#00000",
     },

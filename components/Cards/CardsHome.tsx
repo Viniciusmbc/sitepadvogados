@@ -13,16 +13,15 @@ export default function CardsHome({
   alt: string;
 }) {
   return (
-    <div className=" h-auto w-96 border border-white shadow-md bg-secondary rounded-3xl">
-      <Image
-        src={src}
-        width={100}
-        height={100}
-        alt={alt}
-        className=" mx-auto rounded-3xl my-6"
-      />
-      <h3 className=" text-xl font-extrabold mx-auto text-center">{titulo}</h3>
-      <p className=" text-center text-white">{texto}</p>
+    <div className=" flex flex-col p-9 h-[412px] w-96 border border-white shadow-md bg-[#f8fafd] rounded-3xl">
+      <picture className=" shadow-md rounded-3xl mx-auto mb-6 bg-white w-28 h-28 flex justify-center items-center ">
+        <Image src={src} width={64} height={64} alt={alt} />
+      </picture>
+
+      <h3 className=" mb-4 text-2xl font-extrabold mx-auto text-center">
+        {titulo}
+      </h3>
+      <p className=" text-center text-black text-lg">{texto}</p>
     </div>
   );
 }
