@@ -135,18 +135,25 @@ export default function Home() {
               Passo a Passo para criarmos o WebSite certo para você:
             </em>
             <ul className=" flex justify-center items-center">
-              <li className=" border border-black p-5 w-60 h-72">
-                1º Passo: Você nos passa todos os detalhes que você deseja em
-                seu site: logo, imagens/fotos, sites modelo...
+              <li className=" border border-black p-7 w-fit h-auto rounded-full">
+                <span>1º Passo:</span> <br></br> Você nos passa todos os
+                detalhes que você deseja em seu site: logo, imagens/fotos, sites
+                modelo...
               </li>
-              <li className=" border border-black p-5 w-60 h-72">
+
+              <div className="point"></div>
+              <li className=" border border-black p-5 w-64 h-24 rounded-full">
                 2º Passo: Enviamos a você um layout personalizado do seu site.
               </li>
-              <li className=" border border-black p-5 w-60 h-72">
+
+              <div className="point"></div>
+              <li className=" border border-black p-5 w-64 h-24 rounded-full">
                 3º Passo: Aprovado o layout enviado, damos inicio ao
                 desenvolvimento. Dependendo do layout, entre 5 a 7 dias úteis
               </li>
-              <li className=" border border-black p-5 w-60 h-72">
+
+              <div className="point"></div>
+              <li className=" border border-black p-5 w-64 h-24 rounded-full">
                 Pronto! Agora você tem um site bonito, rápido e seguro para
                 captar mais clientes!
               </li>
@@ -154,61 +161,335 @@ export default function Home() {
           </section>
         </div>
 
-        <section>
-          <h3 className=" text-5xl text-center">Preços e Planos</h3>
+        <section className="bg-white dark:bg-gray-900">
+          <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+            <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                Preços e Planos
+              </h2>
+              <p className="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                Nós temos o plano certo para seus objetivos!
+              </p>
+            </div>
+            <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+              <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                <h3 className="mb-4 text-2xl font-semibold">Básico</h3>
+                <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                  A melhor opção para você que busca uma Land page básica!
+                </p>
+                <div className=" justify-center items-baseline my-8">
+                  <span className="mr-2 text-5xl font-extrabold">R$399</span>
+                  <span className=" text-base "> ou em 10x de R$45</span>
+                </div>
 
-          <div className=" flex flex-col ">
-            <button>Pagamento Anual</button>
-            <button>Pagamento Mensal</button>
-            <div>
-              <strong>Básico</strong>
-              <p>R$ 400,00</p>
-              <ul>
-                <li>Site Profissional Completo</li>
-                <li>Layout Responsivo</li>
-                <li>Hospedagem: Grátis por 06 meses</li>
-                <li>Automatização do WhatsApp: Não</li>
-                <li>Personalização: Limitada</li>
-                <li>Número de Páginas: 3</li>
-                <li>Posts no Blog: 1 </li>
-              </ul>
+                <ul role="list" className="mb-8 space-y-4 text-left">
+                  <li className="flex items-center space-x-3">
+                    <svg
+                      className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                    <span>Site Profissional</span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <svg
+                      className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span>Hospedagem grátis por 1 mês</span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <svg
+                      className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span>
+                      Team size:{" "}
+                      <span className="font-semibold">1 developer</span>
+                    </span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <svg
+                      className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span>
+                      Premium support:{" "}
+                      <span className="font-semibold">6 months</span>
+                    </span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <svg
+                      className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span>
+                      Free updates:{" "}
+                      <span className="font-semibold">6 months</span>
+                    </span>
+                  </li>
+                </ul>
+                <a
+                  href="#"
+                  className="text-white  bg-quaternary hover:bg-primary focus:ring-4 focus:ring-primary font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                >
+                  Contratar
+                </a>
+              </div>
+
+              <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                <h3 className="mb-4 text-2xl font-semibold">Completo</h3>
+                <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                  Para você que busca prospectar mais clientes nos principais
+                  motores de busca!
+                </p>
+                <div className="flex justify-center items-baseline my-8">
+                  <span className="mr-2 text-5xl font-extrabold">R$99</span>
+                </div>
+
+                <ul role="list" className="mb-8 space-y-4 text-left">
+                  <li className="flex items-center space-x-3">
+                    <svg
+                      className="flex-shrink-0 w-5 h-5 text-black"
+                      fill="#00000"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                    <span>Site Profissional Completo</span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <svg
+                      className="flex-shrink-0 w-5 h-5 text-black"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span>Layout totalmente customizado</span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <svg
+                      className="flex-shrink-0 w-5 h-5 text-black"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span>
+                      Team size:{" "}
+                      <span className="font-semibold">10 developers</span>
+                    </span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <svg
+                      className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span>
+                      Premium support:{" "}
+                      <span className="font-semibold">24 months</span>
+                    </span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <svg
+                      className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span>
+                      Free updates:{" "}
+                      <span className="font-semibold">24 months</span>
+                    </span>
+                  </li>
+                </ul>
+                <a
+                  href="#"
+                  className="text-white  bg-quaternary hover:bg-primary focus:ring-4 focus:ring-primary font-medium rounded-lg text-sm px-5 py-2.5 text-center "
+                >
+                  Contratar
+                </a>
+              </div>
+
+              <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                <h3 className="mb-4 text-2xl font-semibold">Premium</h3>
+                <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                  Best for large scale uses and extended redistribution rights.
+                </p>
+                <div className="flex justify-center items-baseline my-8">
+                  <span className="mr-2 text-5xl font-extrabold">$499</span>
+                </div>
+
+                <ul role="list" className="mb-8 space-y-4 text-left">
+                  <li className="flex items-center space-x-3">
+                    <svg
+                      className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span>Individual configuration</span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <svg
+                      className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span>No setup, or hidden fees</span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <svg
+                      className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span>
+                      Postagens no Blog:{" "}
+                      <span className="font-semibold">3</span>
+                    </span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <svg
+                      className="flex-shrink-0 w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span>
+                      Premium support:{" "}
+                      <span className="font-semibold">36 months</span>
+                    </span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <svg
+                      className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span>
+                      Free updates:{" "}
+                      <span className="font-semibold">36 months</span>
+                    </span>
+                  </li>
+                </ul>
+                <a
+                  href="#"
+                  className="text-white  bg-quaternary hover:bg-primary focus:ring-4 focus:ring-primary font-medium rounded-lg text-sm px-5 py-2.5 text-center "
+                >
+                  Contratar
+                </a>
+              </div>
             </div>
-            <div>
-              <strong>Intermediário</strong>
-              <p>R$ 650,00</p>
-              <ul>
-                <li>Site Profissional Completo</li>
-                <li>Layout Responsivo</li>
-                <li>Hospedagem: Grátis por 06 meses</li>
-                <li>Automatização do WhatsApp: Sim</li>
-                <li>Personalização: Ilimitada</li>
-                <li>Número de Páginas: 6</li>
-                <li>Posts no Blog: 2</li>
-              </ul>
-            </div>
-            <div>
-              <strong>Premium</strong>
-              <p>R$ 950,00</p>
-              <ul>
-                <li>Site Profissional Completo</li>
-                <li>Layout Responsivo</li>
-                <li>Hospedagem: Grátis por 12 meses</li>
-                <li>Automatização do WhatsApp: Sim</li>
-                <li>Personalização: Ilimitada</li>
-                <li>Número de Páginas: Ilimitado</li>
-                <li>Posts no Blog: 4</li>
-                <li>+ Guia para criação de vídeos no Youtube</li>
-                <li>+ Guia para criação de conteúdo textual</li>
-              </ul>
-            </div>
-            <h3>
-              Quer postagem <i>mensais</i> no Blog? <br></br>
-              Entre em contato conosco!
-            </h3>
           </div>
+          <h3>
+            Quer postagem <i>mensais</i> no Blog? <br></br>
+            Entre em contato conosco!
+          </h3>
         </section>
 
-        <section></section>
         <footer>
           <h2>Web para Advogados</h2>
         </footer>
