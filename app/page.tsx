@@ -29,7 +29,7 @@ export default function Home() {
           </p>
           <Link
             href={"/"}
-            className=" text-xl w-80 p-4 mt-10 bg-quaternary rounded-full text-white text-center"
+            className=" text-xl w-80 p-4 mt-10 border border-quaternary bg-quaternary rounded-full text-white text-center hover:bg-white hover:text-quaternary "
           >
             Contate-nos
           </Link>
@@ -170,7 +170,7 @@ export default function Home() {
                 <li>Automatização do WhatsApp: Não</li>
                 <li>Personalização: Limitada</li>
                 <li>Número de Páginas: 3</li>
-                <li>Postagem Mensais no Blog: 1 texto com 250 caracteres</li>
+                <li>Posts no Blog: 1 </li>
               </ul>
             </div>
             <div>
@@ -183,9 +183,7 @@ export default function Home() {
                 <li>Automatização do WhatsApp: Sim</li>
                 <li>Personalização: Ilimitada</li>
                 <li>Número de Páginas: 6</li>
-                <li>
-                  Postagem Mensais no Blog: 2 textos com até 500 caracteres
-                </li>
+                <li>Posts no Blog: 2</li>
               </ul>
             </div>
             <div>
@@ -198,13 +196,15 @@ export default function Home() {
                 <li>Automatização do WhatsApp: Sim</li>
                 <li>Personalização: Ilimitada</li>
                 <li>Número de Páginas: Ilimitado</li>
-                <li>
-                  Postagem Mensais no Blog: 4 textos com até 1000 caracteres
-                </li>
+                <li>Posts no Blog: 4</li>
                 <li>+ Guia para criação de vídeos no Youtube</li>
                 <li>+ Guia para criação de conteúdo textual</li>
               </ul>
             </div>
+            <h3>
+              Quer postagem <i>mensais</i> no Blog? <br></br>
+              Entre em contato conosco!
+            </h3>
           </div>
         </section>
 

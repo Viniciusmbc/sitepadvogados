@@ -1,5 +1,10 @@
+"use client";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 import Image, { StaticImageData } from "next/image";
 import personalizado from "../public/personalizado.jpg";
+import { useEffect } from "react";
 
 export default function CardsHome({
   src,
@@ -12,8 +17,28 @@ export default function CardsHome({
   texto: string;
   alt: string;
 }) {
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    }
+  }, [control, inView]);
+
+  const boxVariant = {
+    visible: { opacity: 1, scale: 1 },
+    hidden: { opacity: 0, scale: 0 },
+  };
+
   return (
-    <div className=" flex flex-col p-9 h-[412px] w-96 border border-white shadow-md bg-[#f8fafd] rounded-3xl">
+    <motion.div
+      ref={ref}
+      variants={boxVariant}
+      initial="hidden"
+      animate={control}
+      className=" flex flex-col p-9 h-[412px] w-96 border border-white shadow-md bg-[#f8fafd] rounded-3xl"
+    >
       <picture className=" shadow-md rounded-3xl mx-auto mb-6 bg-white w-28 h-28 flex justify-center items-center ">
         <Image src={src} width={64} height={64} alt={alt} />
       </picture>
@@ -22,6 +47,6 @@ export default function CardsHome({
         {titulo}
       </h3>
       <p className=" text-center text-black text-lg">{texto}</p>
-    </div>
+    </motion.div>
   );
 }
