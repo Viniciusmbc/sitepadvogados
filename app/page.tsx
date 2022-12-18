@@ -232,8 +232,11 @@ export default function Home() {
             Entre em contato conosco!
           </h3>
         </section>
+        <section>
+          <strong>FAQ </strong>
+        </section>
 
-        <footer>
+        <footer className=" bg-secondary ">
           <h2>Web para Advogados</h2>
         </footer>
       </main>
