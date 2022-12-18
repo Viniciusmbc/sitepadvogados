@@ -89,20 +89,20 @@
     transform: matrix(-1, -0.1, 0, 1, 0, 0);
   }
 
- .point {
-   height: 0px;
-   width: 1px;
-   border-bottom: 1px solid #000;
-   -webkit-animation: increase 3s;
-   -moz-animation: increase 3s;
-   -o-animation: increase 3s;
-   animation: increase 3s;
-   animation-fill-mode: forwards;
- }
+  .point {
+    height: 0px;
+    width: 1px;
+    border-bottom: 1px solid #000;
+    -webkit-animation: increase 3s;
+    -moz-animation: increase 3s;
+    -o-animation: increase 3s;
+    animation: increase 3s;
+    animation-fill-mode: forwards;
+  }
 
- @keyframes increase {
-   100% {
-     width: 300px;
-   }
- }
+  @keyframes increase {
+    100% {
+      width: 300px;
+    }
+  }
 }

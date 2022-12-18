@@ -7,7 +7,6 @@ import {
   priceBasic,
   priceComplete,
   pricePremium,
-  prices,
 } from "../components/content/prices";
 import Navbar from "../components/Navbar";
 import PostIt from "../components/PostIt/postIt";
@@ -37,7 +36,7 @@ export default function Home() {
           </p>
           <Link
             href={"/"}
-            className=" text-xl w-80 p-4 mt-10 border border-quaternary bg-quaternary rounded-full text-white text-center hover:bg-white hover:text-quaternary "
+            className=" text-xl w-80 p-4 mt-10 border border-quaternary bg-quaternary rounded-full text-white text-center hover:bg-secondary hover:text-quaternary "
           >
             Contate-nos
           </Link>
@@ -152,8 +151,7 @@ export default function Home() {
                 />
               </li>
 
-              <li className=" border-quintary border-b-4 border-l-4 ">
-                <span className=" border-quintary border-b-4 border-l-4 rotate-[-45deg]  p-7 w-fit h-auto "></span>
+              <li className=" border-primary border-4  p-7 w-fit h-auto rounded-full">
                 <CardsSteps
                   step="Passo 1:"
                   text={`Você nos envia os textos, imagens, fotos, sites modelo
