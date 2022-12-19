@@ -25,7 +25,7 @@ export default function CardsPrice({
           R$ {price}
         </span>
         <span className=" text-base text-quaternary ">
-          ou em 10x de R$ {payInParts}
+          ou em 10x de R$ {payInParts},00
         </span>
       </div>
 

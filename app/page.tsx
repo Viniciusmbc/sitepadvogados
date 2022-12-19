@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ArrowAnimation from "../components/arrowTopRight";
 import CardsHome from "../components/Cards/CardsHome";
 import CardsPrice from "../components/Cards/CardsPrice";
 import CardsSteps from "../components/Cards/CardsSteps";
@@ -136,47 +137,82 @@ export default function Home() {
           </ul>
         </section>
 
-        <div>
-          <section className=" flex flex-col justify-center">
-            <em className=" text-5xl text-center">
-              Passo a Passo para criarmos o WebSite certo para você:
-            </em>
+        <section className=" flex flex-col justify-center">
+          <em className=" text-5xl text-center">
+            Passo a Passo para criarmos o WebSite certo para você:
+          </em>
 
-            <ul className=" flex justify-center items-center">
-              <li className=" border-primary border-4  p-7 w-fit h-auto rounded-full">
-                <CardsSteps
-                  step="Passo 1:"
-                  text={`Você nos envia os textos, imagens, fotos, sites modelo
+          <ul className=" flex justify-center items-center">
+            <li>
+              <CardsSteps
+                step="Passo 1:"
+                text={`Você nos envia os textos, imagens, fotos, sites modelo
                    Quanto mais detalhes você nos fornecer, melhor!`}
-                />
-              </li>
+              />
+            </li>{" "}
+            <svg
+              width="329"
+              height="24"
+              viewBox="0 0 329 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M328.061 13.0607C328.646 12.4749 328.646 11.5251 328.061 10.9393L318.515 1.3934C317.929 0.807612 316.979 0.807612 316.393 1.3934C315.808 1.97918 315.808 2.92893 316.393 3.51472L324.879 12L316.393 20.4853C315.808 21.0711 315.808 22.0208 316.393 22.6066C316.979 23.1924 317.929 23.1924 318.515 22.6066L328.061 13.0607ZM0 13.5L327 13.5V10.5L0 10.5L0 13.5Z"
+                fill="black"
+              />
+            </svg>
+            <li>
+              <CardsSteps
+                step="Passo 2:"
+                text={`Enviamos um layout personalizado do site para você!`}
+              />
+            </li>
+          </ul>
+          <div className=" w-1/2 mx-auto">
+            <svg
+              width="23"
+              height="273"
+              viewBox="0 0 23 273"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className=" ml-auto"
+            >
+              <path
+                d="M9.93151 272.053C10.5129 272.643 11.4627 272.65 12.0528 272.069L21.6692 262.594C22.2593 262.012 22.2663 261.062 21.6849 260.472C21.1034 259.882 20.1537 259.875 19.5636 260.457L11.0157 268.879L2.59352 260.331C2.01209 259.741 1.06236 259.734 0.472254 260.315C-0.117855 260.897 -0.12489 261.846 0.456541 262.436L9.93151 272.053ZM11.5 0.988889L9.50004 270.989L12.5 271.011L14.5 1.01111L11.5 0.988889Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+          <ul className=" flex justify-center items-center">
+            <li>
+              <CardsSteps
+                step="Site Concluído"
+                text={`Seu site estará na internet!`}
+              />
+            </li>
 
-              <li className=" border-primary border-4  p-7 w-fit h-auto rounded-full">
-                <CardsSteps
-                  step="Passo 1:"
-                  text={`Você nos envia os textos, imagens, fotos, sites modelo
-                   Quanto mais detalhes você nos fornecer, melhor!`}
-                />
-              </li>
+            <svg
+              width="338"
+              height="23"
+              viewBox="0 0 338 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.94568 9.93303C0.356407 10.5153 0.350737 11.465 0.933016 12.0543L10.4218 21.6571C11.0041 22.2463 11.9538 22.252 12.5431 21.6697C13.1324 21.0875 13.138 20.1377 12.5557 19.5485L4.12127 11.0127L12.6571 2.57819C13.2463 1.99591 13.252 1.04618 12.6697 0.456909C12.0874 -0.132364 11.1377 -0.138034 10.5484 0.444245L0.94568 9.93303ZM337.009 11.5L2.00894 9.50003L1.99103 12.5L336.991 14.5L337.009 11.5Z"
+                fill="black"
+              />
+            </svg>
 
-              <li className=" border-tercery border-4  p-7 w-fit h-auto rounded-full">
-                <CardsSteps
-                  step="Passo 1:"
-                  text={`Você nos envia os textos, imagens, fotos, sites modelo
-                   Quanto mais detalhes você nos fornecer, melhor!`}
-                />
-              </li>
-
-              <li className=" border-quaternary border-4  p-7 w-fit h-auto rounded-full">
-                <CardsSteps
-                  step="Passo 1:"
-                  text={`Você nos envia os textos, imagens, fotos, sites modelo
-                   Quanto mais detalhes você nos fornecer, melhor!`}
-                />
-              </li>
-            </ul>
-          </section>
-        </div>
+            <li>
+              <CardsSteps
+                step="Passo 3:"
+                text={`Assim que aprovado o layout, começamos a desenvolver seu site!`}
+              />
+            </li>
+          </ul>
+        </section>
 
         <section className="bg-white dark:bg-gray-900">
           <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
@@ -227,13 +263,20 @@ export default function Home() {
               )}
             </div>
           </div>
-          <h3 className=" text-4xl text-secondary">
+          <h3 className=" text-4xl text-secondary text-center">
             Quer postagem <i>mensais</i> no Blog? <br></br>
             Entre em contato conosco!
           </h3>
         </section>
         <section>
-          <strong>FAQ </strong>
+          <strong>Perguntas Frequentes </strong>
+          <ul>
+            <li>Por qual motivo devo ter um site?</li>
+            <li>O que é uma Landing Page?</li>
+            <li>Em quanto tempo o site fica pronto?</li>
+            <li>Quais as formas de pagamento?</li>
+            <li>Tenho alguma garantia que vou receber meu site no prazo?</li>
+          </ul>
         </section>
 
         <footer className=" bg-secondary ">
