@@ -8,7 +8,7 @@ export default function CardsSteps({
   return (
     <div className=" w-60 h-60 px-8 py-6 text-center border border-quaternary shadow-xl relative ">
       <div className=" w-60 h-10 bg-quaternary border-b-primary  shadow-md absolute inset-x-0 top-0">
-        <div className=" flex gap-x-2 justify-end  h-10 items-center ">
+        <div className=" flex gap-x-4 justify-end  h-10 items-center mr-2 ">
           <span className="  bg-white w-4 h-1"></span>
           <span className="  border-white  border-4 top-0 right-0  w-6 h-6"></span>
           <div className=" relative h-2 w-7">

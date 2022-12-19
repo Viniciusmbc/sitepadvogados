@@ -65,7 +65,7 @@ export const pricePremium: {
       "4 textos inclusos;",
       "Suporte 24 horas.",
       "+ 5 Revisões de texto de suas Postagens",
-      "+ Sugestão de Conteúdo para o Site e Redes Sociais",
+      "+ Sugestão de Conteúdo para o Site, Youtube e Redes Sociais",
     ],
   },
 ];

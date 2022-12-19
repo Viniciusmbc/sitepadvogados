@@ -269,13 +269,23 @@ export default function Home() {
           </h3>
         </section>
         <section>
-          <strong>Perguntas Frequentes </strong>
+          <strong>Perguntas Frequentes</strong>
           <ul>
             <li>Por qual motivo devo ter um site?</li>
             <li>O que é uma Landing Page?</li>
             <li>Em quanto tempo o site fica pronto?</li>
+            <li>
+              Ainda não tenho o domínio registrado (www.seusite.com.br), o que
+              devo fazer?
+            </li>
             <li>Quais as formas de pagamento?</li>
             <li>Tenho alguma garantia que vou receber meu site no prazo?</li>
+            <li>Há algum valor mensal a ser pago?</li>
+            <li>Vocês fornecem o código fonte do site desenvolvido?</li>
+            <li>
+              Há um página ou espaço apropriado para eu postar notícias ou
+              minhas próprias postagens?
+            </li>
           </ul>
         </section>
 
