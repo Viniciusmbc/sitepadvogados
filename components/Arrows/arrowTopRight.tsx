@@ -22,7 +22,7 @@ export default function ArrowTopRight() {
   return (
     <motion.svg
       ref={ref}
-      width="378"
+      width="350"
       height="24"
       viewBox="0 0 378 24"
       fill="none"

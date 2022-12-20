@@ -5,6 +5,7 @@ export default function Navbar() {
     "Como funciona?",
     "Planos",
     "FAQ",
+    "Quem nós somos?",
     "Fale Conosco",
   ];
 

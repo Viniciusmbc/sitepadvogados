@@ -4,7 +4,8 @@ import ArrowTopDown from "../components/Arrows/arrowTopDown";
 import ArrowTopRight from "../components/Arrows/arrowTopRight";
 import CardsHome from "../components/Cards/CardsHome";
 import CardsPrice from "../components/Cards/CardsPrice";
-import CardsStep1 from "../components/Cards/CardsStep1";
+import CardsStep from "../components/Cards/CardsStep";
+import CardsStep1 from "../components/Cards/CardsStep";
 import CardsStep2 from "../components/Cards/CardStep2";
 import CardsStep3 from "../components/Cards/CardStep3";
 import CardsStep4 from "../components/Cards/CardStep4";
@@ -121,56 +122,35 @@ export default function Home() {
 
         <section className=" mx-auto pt-40">
           <h3 className=" text-5xl text-center">Todos nossos sites incluem:</h3>
-          <ul className=" flex flex-wrap justify-center items-center ">
-            <li>
-              <PostIt texto="Link para as suas redes sociais: Instagram, Linkedin, Facebook, Twitter." />{" "}
+          <ul className=" flex flex-wrap justify-around items-center ">
+            <li className=" w-28">Link para as Redes Sociais</li>
+            <li className=" w-32">Compatibilidade com Celular, Tablet e PC.</li>
+            <li className=" w-28">
+              Botão para comunicação direta com o WhatsApp.
             </li>
-            <li>
-              <PostIt texto=" Compatibilidade com Celular, Tablet e PC." />{" "}
-            </li>
-            <li>
-              <PostIt texto="Botão para comunicação direta com o seu WhatsApp" />
-            </li>
-            <li>
-              <PostIt texto="Formulário de Contato" />
-            </li>
-            <li>
-              <PostIt texto="Segurança: certificado SSL gratuito." />
-            </li>
+            <li className=" w-28">Formulário de Contato</li>
+            <li className=" w-28">Segurança: certificado SSL gratuito.</li>
           </ul>
         </section>
 
-        <section className=" flex flex-col justify-center w-[80vw]">
+        <section className=" flex flex-col justify-center ">
           <em className=" text-5xl text-center">
             Passo a Passo para criarmos o WebSite certo para você:
           </em>
 
-          <div className=" flex justify-center items-center">
-            <CardsStep1
-              step="Passo 1:"
-              text={`Você nos envia os textos, imagens, fotos, sites modelo
+          <CardsStep
+            step1="Passo 1:"
+            text1={`Você nos envia os textos, imagens, fotos, sites modelo... \n
                    Quanto mais detalhes você nos fornecer, melhor!`}
-            />
-            <ArrowTopRight />
-            <CardsStep2
-              step="Passo 2:"
-              text={`Enviamos um layout personalizado do site para você!`}
-            />
-          </div>
-          <ArrowTopDown />
-          <div className=" flex justify-center items-center">
-            <CardsStep4
-              step="Site Concluído"
-              text={`Seu site estará na internet!`}
-            />
-
-            <ArrowDownRight />
-
-            <CardsStep3
-              step="Passo 3:"
-              text={`Assim que aprovado o layout, começamos a desenvolver seu site!`}
-            />
-          </div>
+            step2={"Passo 2:"}
+            text2={"Enviamos um layout personalizado do site para você!"}
+            step3={" Passo 3: "}
+            text3={
+              "Assim que aprovado o layout, começamos a desenvolver seu site!"
+            }
+            step4={"Site Concluído"}
+            text4={" Seu site estará na internet!"}
+          />
         </section>
 
         <section className="bg-white dark:bg-gray-900">
@@ -223,14 +203,15 @@ export default function Home() {
             </div>
           </div>
           <h3 className=" text-4xl text-secondary text-center">
-            Quer postagem <i>mensais</i> no Blog? <br></br>
+            Quer postagem <i className=" text-quaternary">mensais</i> no Blog?{" "}
+            <br></br>
             Entre em contato conosco!
           </h3>
         </section>
         <section>
           <strong className=" text-3xl">Perguntas Frequentes</strong>
-          <details>
-            <summary className=" cursor-pointer text-lg font-bold">
+          <details className=" text-lg leading-loose">
+            <summary className=" marker:text-quaternary cursor-pointer text-xl font-bold ">
               Por qual motivo devo criar um ter um site para oferecer meus
               serviços como advogado?
             </summary>
@@ -249,8 +230,8 @@ export default function Home() {
             qualquer advogado que deseje promover seus serviços, estabelecer
             credibilidade e se comunicar com os clientes.
           </details>
-          <details>
-            <summary className=" cursor-pointer text-lg font-bold">
+          <details className=" text-lg leading-loose">
+            <summary className=" marker:text-quaternary cursor-pointer text-xl font-bold">
               Qual vantagem de criar um site totalmente personalizado para
               oferecer meus serviços advocatícios?
             </summary>
@@ -289,8 +270,8 @@ export default function Home() {
             otimização para SEO e uma experiência do usuário melhor do que um
             site baseado em um template pré-definido.
           </details>
-          <details>
-            <summary className=" cursor-pointer text-lg font-bold">
+          <details className=" text-lg leading-loose">
+            <summary className=" marker:text-quaternary cursor-pointer text-lg font-bold">
               O que é uma Landing Page?
             </summary>
             Uma landing page é uma página da web projetada para converter
@@ -309,24 +290,24 @@ export default function Home() {
             visitantes em clientes potenciais, oferecendo-lhes algo de valor em
             troca de suas informações de contato.
           </details>
-          <details>
-            <summary className=" cursor-pointer text-lg font-bold">
+          <details className=" text-lg leading-loose">
+            <summary className=" marker:text-quaternary cursor-pointer text-lg font-bold">
               Em quanto tempo o site fica pronto?
             </summary>
             Após a aprovação do Layout, o site ficará pronto em até 5 dias
             úteis.
           </details>
 
-          <details>
-            <summary className=" cursor-pointer text-lg font-bold">
+          <details className=" text-lg leading-loose">
+            <summary className=" marker:text-quaternary cursor-pointer text-lg font-bold">
               É possível que vocês redigiam os textos iniciais do site
               (descrição do escritório, áreas de atuação, etc )?
             </summary>
             Sim, porém há custo adicional. Entre em contato para acertarmos
             valores.
           </details>
-          <details>
-            <summary className=" cursor-pointer text-lg font-bold text-secondary">
+          <details className=" text-lg leading-loose">
+            <summary className=" marker:text-quaternary cursor-pointer text-lg font-bold text-secondary">
               Ainda não tenho o domínio registrado (www.seusite.com.br), o que
               devo fazer?
             </summary>
@@ -336,36 +317,36 @@ export default function Home() {
             um dominío variam entre R$ 50,00 a R$ 150,00 anuais no google
             domains.
           </details>
-          <details>
-            <summary className=" cursor-pointer text-lg font-bold">
+          <details className=" text-lg leading-loose">
+            <summary className=" marker:text-quaternary cursor-pointer text-lg font-bold">
               Quais as formas de pagamento?
             </summary>
             Aceitamos PIX e Cartão de Crédito.
           </details>
-          <details>
-            <summary className=" cursor-pointer text-lg font-bold">
+          <details className=" text-lg leading-loose">
+            <summary className=" marker:text-quaternary cursor-pointer text-lg font-bold">
               Tenho alguma garantia que vou receber meu site no prazo?
             </summary>
             Além do contrato, você pode optar por comprar diretamente em anúncio
             no Mercado Livre, garantindo toda a proteção que a plataforma
             oferece.
           </details>
-          <details>
-            <summary className=" cursor-pointer text-lg font-bold">
+          <details className=" text-lg leading-loose">
+            <summary className=" marker:text-quaternary cursor-pointer text-lg font-bold">
               Há algum valor mensal a ser pago?
             </summary>
             Não, você só pagará pela manutenção do site caso deseje fazer alguma
             modificação como troca de uma imagem ou mudança no layout.
           </details>
-          <details>
-            <summary className=" cursor-pointer text-lg font-bold">
+          <details className=" text-lg leading-loose">
+            <summary className=" marker:text-quaternary cursor-pointer text-lg font-bold">
               Vocês fornecem o código fonte do site desenvolvido?
             </summary>
             Sim, fornecemos o código fonte para, caso você deseje, possa migrar
             para outra plataforma ou outros desenvolvedores.
           </details>
-          <details>
-            <summary className=" cursor-pointer text-lg font-bold">
+          <details className=" text-lg leading-loose">
+            <summary className=" marker:text-quaternary cursor-pointer text-lg font-bold">
               Há um página ou espaço apropriado para eu postar notícias ou
               minhas próprias postagens?
             </summary>
@@ -374,7 +355,7 @@ export default function Home() {
             úteis no site, sem custo adicional.
           </details>
           <details>
-            <summary className=" cursor-pointer text-lg font-bold">
+            <summary className=" marker:text-quaternary cursor-pointer text-lg font-bold">
               Preciso fornecer o acesso do meu WhatsApp para automatizar?
             </summary>
             Você receberá todas as orientações para que o programa rode em seu
