@@ -1,21 +1,13 @@
 import Link from "next/link";
-import ArrowDownRight from "../components/Arrows/arrowDownRight";
-import ArrowTopDown from "../components/Arrows/arrowTopDown";
-import ArrowTopRight from "../components/Arrows/arrowTopRight";
 import CardsHome from "../components/Cards/CardsHome";
 import CardsPrice from "../components/Cards/CardsPrice";
 import CardsStep from "../components/Cards/CardsStep";
-import CardsStep1 from "../components/Cards/CardsStep";
-import CardsStep2 from "../components/Cards/CardStep2";
-import CardsStep3 from "../components/Cards/CardStep3";
-import CardsStep4 from "../components/Cards/CardStep4";
 import {
   priceBasic,
   priceComplete,
   pricePremium,
 } from "../components/content/prices";
 import Navbar from "../components/Layout/Navbar";
-import PostIt from "../components/PostIt/postIt";
 import manutencaoImagem from "../public/manutencaoSite.png";
 import personalizado from "../public/personalizadoWeb.png";
 import redacaoImagem from "../public/redacaoImagemicone.png";
