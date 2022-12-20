@@ -1,10 +1,10 @@
 "use client";
-import { useAnimation, motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 import Image, { StaticImageData } from "next/image";
-import personalizado from "../public/personalizado.jpg";
 import { useEffect } from "react";
+import personalizado from "../public/personalizado.jpg";
 
 export default function CardsHome({
   src,
