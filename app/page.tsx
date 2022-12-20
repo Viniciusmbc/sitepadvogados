@@ -49,7 +49,8 @@ export default function Home() {
         <div className=" bg-white ">
           <section className="flex mx-auto flex-col justify-center items-center pt-24 w-full max-w-[100vw]">
             <h2 className=" text-5xl">
-              Por que nos <b>escolher</b> para criar seu site?
+              Por que nos <b className=" text-tercery">escolher</b> para criar
+              seu site?
             </h2>
             <ul className="mt-8 grid grid-cols-3  gap-8 ">
               <li>
@@ -120,7 +121,7 @@ export default function Home() {
           </section>
         </div>
 
-        <section className=" mx-auto pt-40">
+        <section className=" mx-auto pt-40 bg-quaternary">
           <h3 className=" text-5xl text-center">Todos nossos sites incluem:</h3>
           <ul className=" flex flex-wrap justify-around items-center ">
             <li className=" w-28">Link para as Redes Sociais</li>
@@ -135,7 +136,9 @@ export default function Home() {
 
         <section className=" flex flex-col justify-center ">
           <em className=" text-5xl text-center">
-            Passo a Passo para criarmos o WebSite certo para você:
+            Passo a Passo para criarmos o WebSite{" "}
+            <span className=" underline underline-offset-1">certo</span> para
+            você:
           </em>
 
           <CardsStep
@@ -363,8 +366,21 @@ export default function Home() {
           </details>
         </section>
 
-        <footer className=" bg-secondary ">
+        <footer className=" bg-secondary h-80 ">
           <h2>Web para Advogados</h2>
+          <ul>
+            <li>Menu</li>
+            <li>Home</li>
+            <li>Quem Somos</li>
+            <li>Blog</li>
+            <li>Contato</li>
+          </ul>
+          <ul>
+            <li>Entre em Contato</li>
+            <li>xxxx@webadv.com.br</li>
+            <li>WhatsApp: 55 91234-1234</li>
+            <li>55 91234-1234</li>
+          </ul>
         </footer>
       </main>
     </>
