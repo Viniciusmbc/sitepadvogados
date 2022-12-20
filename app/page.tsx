@@ -259,23 +259,132 @@ export default function Home() {
         </section>
         <section>
           <strong>Perguntas Frequentes</strong>
-          <ul>
-            <li>Por qual motivo devo ter um site?</li>
-            <li>O que é uma Landing Page?</li>
-            <li>Em quanto tempo o site fica pronto?</li>
-            <li>
+          <details>
+            <summary>
+              Sou advogado e/ou tenho um escritório de advocacia. Qual a razão
+              de eu ter um site?
+            </summary>
+            Um site pode ser uma ótima maneira de promover os serviços de um
+            advogado e aumentar a visibilidade da sua empresa. Ele também pode
+            ser uma ferramenta útil para estabelecer credibilidade e confiança
+            com os clientes potenciais. Além disso, um site pode fornecer
+            informações valiosas sobre os serviços oferecidos pelo advogado, bem
+            como sobre sua experiência e qualificações. Isso pode ajudar os
+            clientes a tomar uma decisão informada sobre se contratar ou não o
+            advogado. Um site também pode ser uma plataforma útil para o
+            advogado se comunicar com os clientes atuais e potenciais. Por
+            exemplo, o advogado pode usar o site para fornecer atualizações
+            sobre o andamento de um caso ou para responder a perguntas
+            frequentes. Em resumo, um site pode ser uma ferramenta valiosa para
+            qualquer advogado que deseje promover seus serviços, estabelecer
+            credibilidade e se comunicar com os clientes.
+          </details>
+          <details>
+            <summary>
+              Qual vantagem de criar um site totalmente personalizado para
+              oferecer meus serviços advocatícios?
+            </summary>
+            <ul className=" list-disc">
+              <li>
+                Personalização: Um site personalizado permite que o escritório
+                de advocacia crie uma aparência e uma experiência únicas que
+                refletem sua marca e seus valores. Isso pode ajudar a
+                diferenciar o escritório de outros no mercado e a estabelecer
+                credibilidade e confiança com os clientes.
+              </li>
+              <li>
+                Flexibilidade: Um site personalizado dá ao escritório de
+                advocacia o controle total sobre o design, o conteúdo e as
+                funcionalidades do site. Isso permite que o escritório adicione
+                ou remova recursos conforme necessário, sem ser limitado pelas
+                opções pré-definidas de um template.
+              </li>
+              <li>
+                Otimização para SEO: Criar um site personalizado permite que o
+                escritório de advocacia otimize o site de acordo com as
+                palavras-chave e as práticas de SEO relevantes para o negócio.
+                Isso pode ajudar o site a se posicionar melhor nos resultados de
+                busca e a atrair mais tráfego orgânico.
+              </li>
+              <li>
+                Experiência do usuário: Um site personalizado pode ser projetado
+                de forma a fornecer aos visitantes uma experiência de usuário
+                mais agradável e intuitiva. Isso pode aumentar a probabilidade
+                de os visitantes se tornarem clientes e de eles recomendarem o
+                escritório de advocacia para outras pessoas.
+              </li>
+            </ul>
+            Em resumo, criar um site personalizado para um escritório de
+            advocacia pode oferecer mais personalização, flexibilidade,
+            otimização para SEO e uma experiência do usuário melhor do que um
+            site baseado em um template pré-definido.
+          </details>
+          <details>
+            <summary>O que é uma Landing Page?</summary>
+            Uma landing page é uma página da web projetada para converter
+            visitantes em clientes potenciais, geralmente através da realização
+            de uma ação, como preencher um formulário ou fazer um pedido. As
+            landing pages são geralmente usadas como parte de uma estratégia de
+            marketing digital, para direcionar tráfego para uma página
+            específica de um site a partir de anúncios online, e-mails ou links
+            em redes sociais. O objetivo de uma landing page é capturar
+            informações sobre os visitantes, como o nome, o endereço de e-mail
+            ou o número de telefone, de modo a poder entrar em contato com eles
+            posteriormente. As landing pages também podem ser usadas para vender
+            produtos ou serviços diretamente, oferecendo aos visitantes a opção
+            de fazer um pedido ou se inscrever para receber mais informações. Em
+            resumo, a função principal de uma landing page é converter
+            visitantes em clientes potenciais, oferecendo-lhes algo de valor em
+            troca de suas informações de contato.
+          </details>
+          <details>
+            <summary>Em quanto tempo o site fica pronto?</summary>
+            Após a aprovação do Layout, o site ficará pronto em até 5 dias
+            úteis.
+          </details>
+          <details>
+            <summary>
               Ainda não tenho o domínio registrado (www.seusite.com.br), o que
               devo fazer?
-            </li>
-            <li>Quais as formas de pagamento?</li>
-            <li>Tenho alguma garantia que vou receber meu site no prazo?</li>
-            <li>Há algum valor mensal a ser pago?</li>
-            <li>Vocês fornecem o código fonte do site desenvolvido?</li>
-            <li>
+            </summary>
+            Nossa equipe oferecerá todo o suporte para você adquirir um dominío
+            na internet. Indicaremos diversas opções de site de dominios,
+            ficando a seu critério a escolha. A titulo de exemplo, os valores de
+            um dominío variam entre R$ 50,00 a R$ 150,00 anuais no google
+            domains.
+          </details>
+          <details>
+            <summary>Quais as formas de pagamento?</summary>
+            Aceitamos PIX e Cartão de Crédito.
+          </details>
+          <details>
+            <summary>
+              Tenho alguma garantia que vou receber meu site no prazo?
+            </summary>
+            Além da garantia contratual, temos anúncio no Mercado Livre,
+            garantindo toda a proteção que a plataforma oferece.
+          </details>
+          <details>
+            <summary>Há algum valor mensal a ser pago?</summary>
+            Não, você só pagará pela manutenção do site caso deseje fazer alguma
+            modificação como troca de uma imagem ou mudança no layout.
+          </details>
+          <details>
+            <summary>
+              Vocês fornecem o código fonte do site desenvolvido?
+            </summary>
+            Sim, fornecemos o código fonte para, caso você deseje, possa migrar
+            para outra plataforma ou outros desenvolvedores.
+          </details>
+          <details>
+            <summary>
               Há um página ou espaço apropriado para eu postar notícias ou
               minhas próprias postagens?
-            </li>
-          </ul>
+            </summary>
+            Sim, em todas as opções ofertadada, há um espaço apropriado para
+            postagens. Basta você nos enviar o texto e colocaremos em até 2 dias
+            úteis no site, sem custo adicional.
+          </details>
         </section>
 
         <footer className=" bg-secondary ">
