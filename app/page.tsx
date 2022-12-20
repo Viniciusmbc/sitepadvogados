@@ -1,18 +1,20 @@
-import Image from "next/image";
 import Link from "next/link";
-import ArrowDownRight from "../components/arrowDownRight";
-import ArrowAnimation from "../components/arrowTopRight";
+import ArrowDownRight from "../components/Arrows/arrowDownRight";
+import ArrowTopDown from "../components/Arrows/arrowTopDown";
+import ArrowTopRight from "../components/Arrows/arrowTopRight";
 import CardsHome from "../components/Cards/CardsHome";
 import CardsPrice from "../components/Cards/CardsPrice";
-import CardsSteps from "../components/Cards/CardsSteps";
+import CardsStep1 from "../components/Cards/CardsStep1";
+import CardsStep2 from "../components/Cards/CardStep2";
+import CardsStep3 from "../components/Cards/CardStep3";
+import CardsStep4 from "../components/Cards/CardStep4";
 import {
   priceBasic,
   priceComplete,
   pricePremium,
 } from "../components/content/prices";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Layout/Navbar";
 import PostIt from "../components/PostIt/postIt";
-import imagemInternet from "../public/global-connections.jpg";
 import manutencaoImagem from "../public/manutencaoSite.png";
 import personalizado from "../public/personalizadoWeb.png";
 import redacaoImagem from "../public/redacaoImagemicone.png";
@@ -138,69 +140,37 @@ export default function Home() {
           </ul>
         </section>
 
-        <section className=" flex flex-col justify-center">
+        <section className=" flex flex-col justify-center w-[80vw]">
           <em className=" text-5xl text-center">
             Passo a Passo para criarmos o WebSite certo para você:
           </em>
 
-          <ul className=" flex justify-center items-center">
-            <li>
-              <CardsSteps
-                step="Passo 1:"
-                text={`Você nos envia os textos, imagens, fotos, sites modelo
+          <div className=" flex justify-center items-center">
+            <CardsStep1
+              step="Passo 1:"
+              text={`Você nos envia os textos, imagens, fotos, sites modelo
                    Quanto mais detalhes você nos fornecer, melhor!`}
-              />
-            </li>{" "}
-            <svg
-              width="329"
-              height="24"
-              viewBox="0 0 329 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M328.061 13.0607C328.646 12.4749 328.646 11.5251 328.061 10.9393L318.515 1.3934C317.929 0.807612 316.979 0.807612 316.393 1.3934C315.808 1.97918 315.808 2.92893 316.393 3.51472L324.879 12L316.393 20.4853C315.808 21.0711 315.808 22.0208 316.393 22.6066C316.979 23.1924 317.929 23.1924 318.515 22.6066L328.061 13.0607ZM0 13.5L327 13.5V10.5L0 10.5L0 13.5Z"
-                fill="black"
-              />
-            </svg>
-            <li>
-              <CardsSteps
-                step="Passo 2:"
-                text={`Enviamos um layout personalizado do site para você!`}
-              />
-            </li>
-          </ul>
-          <div className=" w-1/2 mx-auto">
-            <svg
-              width="23"
-              height="273"
-              viewBox="0 0 23 273"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className=" ml-auto"
-            >
-              <path
-                d="M9.93151 272.053C10.5129 272.643 11.4627 272.65 12.0528 272.069L21.6692 262.594C22.2593 262.012 22.2663 261.062 21.6849 260.472C21.1034 259.882 20.1537 259.875 19.5636 260.457L11.0157 268.879L2.59352 260.331C2.01209 259.741 1.06236 259.734 0.472254 260.315C-0.117855 260.897 -0.12489 261.846 0.456541 262.436L9.93151 272.053ZM11.5 0.988889L9.50004 270.989L12.5 271.011L14.5 1.01111L11.5 0.988889Z"
-                fill="black"
-              />
-            </svg>
+            />
+            <ArrowTopRight />
+            <CardsStep2
+              step="Passo 2:"
+              text={`Enviamos um layout personalizado do site para você!`}
+            />
           </div>
-          <ul className=" flex justify-center items-center">
-            <li>
-              <CardsSteps
-                step="Site Concluído"
-                text={`Seu site estará na internet!`}
-              />
-            </li>
+          <ArrowTopDown />
+          <div className=" flex justify-center items-center">
+            <CardsStep4
+              step="Site Concluído"
+              text={`Seu site estará na internet!`}
+            />
 
             <ArrowDownRight />
-            <li>
-              <CardsSteps
-                step="Passo 3:"
-                text={`Assim que aprovado o layout, começamos a desenvolver seu site!`}
-              />
-            </li>
-          </ul>
+
+            <CardsStep3
+              step="Passo 3:"
+              text={`Assim que aprovado o layout, começamos a desenvolver seu site!`}
+            />
+          </div>
         </section>
 
         <section className="bg-white dark:bg-gray-900">
@@ -258,11 +228,11 @@ export default function Home() {
           </h3>
         </section>
         <section>
-          <strong>Perguntas Frequentes</strong>
+          <strong className=" text-3xl">Perguntas Frequentes</strong>
           <details>
-            <summary>
-              Sou advogado e/ou tenho um escritório de advocacia. Qual a razão
-              de eu ter um site?
+            <summary className=" cursor-pointer text-lg font-bold">
+              Por qual motivo devo criar um ter um site para oferecer meus
+              serviços como advogado?
             </summary>
             Um site pode ser uma ótima maneira de promover os serviços de um
             advogado e aumentar a visibilidade da sua empresa. Ele também pode
@@ -280,7 +250,7 @@ export default function Home() {
             credibilidade e se comunicar com os clientes.
           </details>
           <details>
-            <summary>
+            <summary className=" cursor-pointer text-lg font-bold">
               Qual vantagem de criar um site totalmente personalizado para
               oferecer meus serviços advocatícios?
             </summary>
@@ -320,7 +290,9 @@ export default function Home() {
             site baseado em um template pré-definido.
           </details>
           <details>
-            <summary>O que é uma Landing Page?</summary>
+            <summary className=" cursor-pointer text-lg font-bold">
+              O que é uma Landing Page?
+            </summary>
             Uma landing page é uma página da web projetada para converter
             visitantes em clientes potenciais, geralmente através da realização
             de uma ação, como preencher um formulário ou fazer um pedido. As
@@ -338,12 +310,23 @@ export default function Home() {
             troca de suas informações de contato.
           </details>
           <details>
-            <summary>Em quanto tempo o site fica pronto?</summary>
+            <summary className=" cursor-pointer text-lg font-bold">
+              Em quanto tempo o site fica pronto?
+            </summary>
             Após a aprovação do Layout, o site ficará pronto em até 5 dias
             úteis.
           </details>
+
           <details>
-            <summary>
+            <summary className=" cursor-pointer text-lg font-bold">
+              É possível que vocês redigiam os textos iniciais do site
+              (descrição do escritório, áreas de atuação, etc )?
+            </summary>
+            Sim, porém há custo adicional. Entre em contato para acertarmos
+            valores.
+          </details>
+          <details>
+            <summary className=" cursor-pointer text-lg font-bold text-secondary">
               Ainda não tenho o domínio registrado (www.seusite.com.br), o que
               devo fazer?
             </summary>
@@ -354,36 +337,48 @@ export default function Home() {
             domains.
           </details>
           <details>
-            <summary>Quais as formas de pagamento?</summary>
+            <summary className=" cursor-pointer text-lg font-bold">
+              Quais as formas de pagamento?
+            </summary>
             Aceitamos PIX e Cartão de Crédito.
           </details>
           <details>
-            <summary>
+            <summary className=" cursor-pointer text-lg font-bold">
               Tenho alguma garantia que vou receber meu site no prazo?
             </summary>
-            Além da garantia contratual, temos anúncio no Mercado Livre,
-            garantindo toda a proteção que a plataforma oferece.
+            Além do contrato, você pode optar por comprar diretamente em anúncio
+            no Mercado Livre, garantindo toda a proteção que a plataforma
+            oferece.
           </details>
           <details>
-            <summary>Há algum valor mensal a ser pago?</summary>
+            <summary className=" cursor-pointer text-lg font-bold">
+              Há algum valor mensal a ser pago?
+            </summary>
             Não, você só pagará pela manutenção do site caso deseje fazer alguma
             modificação como troca de uma imagem ou mudança no layout.
           </details>
           <details>
-            <summary>
+            <summary className=" cursor-pointer text-lg font-bold">
               Vocês fornecem o código fonte do site desenvolvido?
             </summary>
             Sim, fornecemos o código fonte para, caso você deseje, possa migrar
             para outra plataforma ou outros desenvolvedores.
           </details>
           <details>
-            <summary>
+            <summary className=" cursor-pointer text-lg font-bold">
               Há um página ou espaço apropriado para eu postar notícias ou
               minhas próprias postagens?
             </summary>
             Sim, em todas as opções ofertadada, há um espaço apropriado para
             postagens. Basta você nos enviar o texto e colocaremos em até 2 dias
             úteis no site, sem custo adicional.
+          </details>
+          <details>
+            <summary className=" cursor-pointer text-lg font-bold">
+              Preciso fornecer o acesso do meu WhatsApp para automatizar?
+            </summary>
+            Você receberá todas as orientações para que o programa rode em seu
+            próprio PC, garantindo que não teremos acesso a nenhuma mensagem.
           </details>
         </section>
 
