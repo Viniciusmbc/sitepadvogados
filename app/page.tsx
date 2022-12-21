@@ -25,7 +25,7 @@ import manutencaoImagem from "../public/manutencaoSite.png";
 import personalizado from "../public/personalizadoWeb.png";
 import redacaoImagem from "../public/redacaoImagemicone.png";
 import seoImagem from "../public/seoImagem.png";
-import imagemPrincipal from "../public/sitePrincipal.jpg";
+import imagemPrincipal from "../public/sitePrincipal.png";
 import relogioImagem from "../public/siterapidoImage.png";
 import whatsappImagem from "../public/whatsappImagemAuto.png";
 
@@ -34,11 +34,14 @@ export default function Home() {
     <>
       <Navbar />
       <main>
-        <section className=" bg-white flex  justify-center items-center min-h-[90vh] relative">
-          <div className=" absolute z-10 inset-y-0 left-0 top-[10%] ">
-            <h1 className=" text-quaternary font-bold text-7xl flex">
-              Nós colocamos seus <br></br> Serviços de Advocacia <br></br> na
-              Web!
+        <section className=" bg-white flex  justify-center items-center h-[85vh] relative">
+          <div className="  absolute z-10 inset-y-0 left-28 top-[15%] ">
+            <h1 className=" text-quaternary font-bold text-7xl flex flex-col">
+              Nós colocamos seus <br></br>
+              <span className=" text-secondary">
+                Serviços de Advocacia <br></br>
+              </span>
+              na Web!
             </h1>
             <h2 className=" my-8 text-xl  text-primary max-w-[438px]">
               Ter um site que atraia e converta clientes é essencial para
@@ -48,7 +51,7 @@ export default function Home() {
 
             <Link
               href={"/"}
-              className=" mt-9 mx-auto text-xl w-80 p-4  border border-quaternary bg-secondary rounded-full text-white text-center hover:bg-quaternary hover:text-quaternary "
+              className=" mt-9 mx-auto text-xl w-80 p-4  bg-secondary rounded-full text-white text-center hover:bg-quaternary hover:text-secondary "
             >
               Contate-nos
             </Link>
@@ -56,7 +59,7 @@ export default function Home() {
 
           <Image
             src={imagemPrincipal}
-            className=" max-h-[578px] absolute inset-y-0 right-0 top-[12%]"
+            className=" max-h-[578px] absolute inset-y-0 right-0 top-[20%]"
             width={800}
             height={570}
             alt="imagem principal"
@@ -68,7 +71,7 @@ export default function Home() {
               Por que nos <b className=" text-tercery">escolher</b> para criar
               seu site?
             </h2>
-            <ul className="mt-8 grid grid-cols-1 md:grid-cols-3  gap-8 ">
+            <ul className="mt-8 grid md:grid-cols-3  gap-8 ">
               <li>
                 <CardsHome
                   src={personalizado}
@@ -138,7 +141,9 @@ export default function Home() {
         </div>
 
         <section>
-          <h3 className=" text-5xl text-center">Todos nossos sites incluem:</h3>
+          <h3 className=" text-5xl text-center pt-10 text-secondary ">
+            Todos nossos sites incluem:
+          </h3>
           <ul className=" flex flex-wrap justify-around items-center ">
             <li>
               <div className=" flex justify-between ">
@@ -167,7 +172,7 @@ export default function Home() {
             <li className=" w-28">
               <span>
                 <svg
-                  height="100%"
+                  height="50px"
                   fillRule="evenodd"
                   clipRule="evenodd"
                   strokeLinecap="round"
@@ -286,19 +291,18 @@ export default function Home() {
               serviços como advogado?
             </summary>
             Um site pode ser uma ótima maneira de promover os serviços de um
-            advogado e aumentar a visibilidade da sua empresa. Ele também pode
-            ser uma ferramenta útil para estabelecer credibilidade e confiança
-            com os clientes potenciais. Além disso, um site pode fornecer
-            informações valiosas sobre os serviços oferecidos pelo advogado, bem
-            como sobre sua experiência e qualificações. Isso pode ajudar os
-            clientes a tomar uma decisão informada sobre se contratar ou não o
-            advogado. Um site também pode ser uma plataforma útil para o
-            advogado se comunicar com os clientes atuais e potenciais. Por
-            exemplo, o advogado pode usar o site para fornecer atualizações
-            sobre o andamento de um caso ou para responder a perguntas
-            frequentes. Em resumo, um site pode ser uma ferramenta valiosa para
-            qualquer advogado que deseje promover seus serviços, estabelecer
-            credibilidade e se comunicar com os clientes.
+            advogado e aumentar a visibilidade de sua empresa. Também pode ser
+            uma ferramenta útil para construir credibilidade e confiança com
+            clientes em potencial. Além disso, um site pode fornecer informações
+            valiosas sobre os serviços oferecidos pelo advogado, bem como sua
+            experiência e qualificações. Isso pode ajudar os clientes a tomar
+            uma decisão informada sobre contratar ou não o advogado. Um site
+            também pode ser uma plataforma útil para o advogado se comunicar com
+            clientes atuais e potenciais. Por exemplo, o advogado pode usar o
+            site para fornecer informações sobre o andamento de um caso ou para
+            responder a perguntas frequentes. Em resumo, um site pode ser uma
+            ferramenta valiosa para qualquer advogado que queira promover seus
+            serviços, estabelecer credibilidade e se comunicar com os clientes.
           </details>
           <details className=" text-lg leading-loose">
             <summary className=" marker:text-quaternary cursor-pointer text-xl font-bold">
@@ -307,11 +311,11 @@ export default function Home() {
             </summary>
             <ul className=" list-disc">
               <li>
-                Personalização: Um site personalizado permite que o escritório
-                de advocacia crie uma aparência e uma experiência únicas que
-                refletem sua marca e seus valores. Isso pode ajudar a
-                diferenciar o escritório de outros no mercado e a estabelecer
-                credibilidade e confiança com os clientes.
+                Personalização: Um site personalizado permite que um escritório
+                de advocacia crie uma aparência única que reflita sua marca e
+                seus valores. Isso pode ajudar a diferenciar a empresa de outras
+                no mercado e construir credibilidade e confiança com os
+                clientes.
               </li>
               <li>
                 Flexibilidade: Um site personalizado dá ao escritório de
