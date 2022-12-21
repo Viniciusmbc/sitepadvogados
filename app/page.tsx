@@ -1,17 +1,31 @@
+// Next tools
+import Image from "next/image";
 import Link from "next/link";
+
+// Components
 import CardsHome from "../components/Cards/CardsHome";
 import CardsPrice from "../components/Cards/CardsPrice";
 import CardsStep from "../components/Cards/CardsStep";
+
+// Content
 import {
   priceBasic,
   priceComplete,
   pricePremium,
 } from "../components/content/prices";
+
+// Layout
 import Navbar from "../components/Layout/Navbar";
+
+// Images
+import facebookIcone from "../public/facebookIcon.png";
+import instagramIcone from "../public/instagramIcon.png";
+import linkedinIcone from "../public/linkedinLogo.png";
 import manutencaoImagem from "../public/manutencaoSite.png";
 import personalizado from "../public/personalizadoWeb.png";
 import redacaoImagem from "../public/redacaoImagemicone.png";
 import seoImagem from "../public/seoImagem.png";
+import imagemPrincipal from "../public/sitePrincipal.jpg";
 import relogioImagem from "../public/siterapidoImage.png";
 import whatsappImagem from "../public/whatsappImagemAuto.png";
 
@@ -20,23 +34,33 @@ export default function Home() {
     <>
       <Navbar />
       <main>
-        <section className=" bg-white  flex flex-col justify-center items-center min-h-[90vh]">
-          <h1 className=" text-primary text-7xl mx-auto flex items-center justify-center  text-center">
-            Nós colocamos <br></br> seus Serviços de Advocacia <br></br> na Web!
-          </h1>
-          <h2 className="text-center mx-auto text-primary">
-            Ter um site que atraia e converta clientes é essencial para
-            construir uma carreira sólida na advocacia.{" "}
-          </h2>
-          <p className=" text-center mx-auto">
-            <i>De advogado para advogado.</i>
-          </p>
-          <Link
-            href={"/"}
-            className=" text-xl w-80 p-4 mt-10 border border-quaternary bg-quaternary rounded-full text-white text-center hover:bg-secondary hover:text-quaternary "
-          >
-            Contate-nos
-          </Link>
+        <section className=" bg-white flex  justify-center items-center min-h-[90vh] relative">
+          <div className=" absolute z-10 inset-y-0 left-0 top-[10%] ">
+            <h1 className=" text-quaternary font-bold text-7xl flex">
+              Nós colocamos seus <br></br> Serviços de Advocacia <br></br> na
+              Web!
+            </h1>
+            <h2 className=" my-8 text-xl  text-primary max-w-[438px]">
+              Ter um site que atraia e converta clientes é essencial para
+              construir uma carreira sólida na advocacia.{" "}
+              <i>De advogado para advogado.</i>
+            </h2>
+
+            <Link
+              href={"/"}
+              className=" mt-9 mx-auto text-xl w-80 p-4  border border-quaternary bg-secondary rounded-full text-white text-center hover:bg-quaternary hover:text-quaternary "
+            >
+              Contate-nos
+            </Link>
+          </div>
+
+          <Image
+            src={imagemPrincipal}
+            className=" max-h-[578px] absolute inset-y-0 right-0 top-[12%]"
+            width={800}
+            height={570}
+            alt="imagem principal"
+          />
         </section>
         <div className=" bg-white ">
           <section className="flex mx-auto flex-col justify-center items-center pt-24 w-full max-w-[100vw]">
@@ -44,7 +68,7 @@ export default function Home() {
               Por que nos <b className=" text-tercery">escolher</b> para criar
               seu site?
             </h2>
-            <ul className="mt-8 grid grid-cols-3  gap-8 ">
+            <ul className="mt-8 grid grid-cols-1 md:grid-cols-3  gap-8 ">
               <li>
                 <CardsHome
                   src={personalizado}
@@ -113,12 +137,63 @@ export default function Home() {
           </section>
         </div>
 
-        <section className=" mx-auto pt-40 bg-quaternary">
+        <section>
           <h3 className=" text-5xl text-center">Todos nossos sites incluem:</h3>
           <ul className=" flex flex-wrap justify-around items-center ">
-            <li className=" w-28">Link para as Redes Sociais</li>
-            <li className=" w-32">Compatibilidade com Celular, Tablet e PC.</li>
+            <li>
+              <div className=" flex justify-between ">
+                <Image
+                  src={facebookIcone}
+                  width={20}
+                  height={20}
+                  alt="Facebook Icone"
+                />
+                <Image
+                  src={instagramIcone}
+                  width={20}
+                  height={20}
+                  alt="instagram icone"
+                />
+                <Image
+                  src={linkedinIcone}
+                  width={20}
+                  height={20}
+                  alt="linkedin icone"
+                />
+              </div>
+              Link para as Redes Sociais
+            </li>
+
             <li className=" w-28">
+              <span>
+                <svg
+                  height="100%"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  strokeLinecap="round"
+                  strokeMiterlimit={"1.41421"}
+                  version="1.1"
+                  viewBox="0 0 24 24"
+                  width="100%"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M4.018,17.048c-0.96,-1.484 -1.518,-3.253 -1.518,-5.151c0,-5.243 4.257,-9.5 9.5,-9.5c5.243,0 9.5,4.257 9.5,9.5c0,5.243 -4.257,9.5 -9.5,9.5c-1.777,0 -3.44,-0.489 -4.863,-1.339l-4.637,1.545l1.518,-4.555Z"
+                        fill="#f3f3f3"
+                      />
+                      <path
+                        d="M5.795,16.304c-0.886,-1.244 -1.407,-2.765 -1.407,-4.407c0,-4.201 3.411,-7.612 7.612,-7.612c4.201,0 7.612,3.411 7.612,7.612c0,4.201 -3.411,7.611 -7.612,7.611c-1.59,0 -3.066,-0.488 -4.288,-1.323l-2.862,0.954l0.945,-2.835Z"
+                        fill="#00a82d"
+                      />
+                    </g>
+                    <path
+                      d="M9.714,13.873c-1.124,-1.374 -1.874,-3.056 -2.109,-4.88c-0.063,-0.508 0.106,-1.018 0.461,-1.387c0.355,-0.369 0.858,-0.558 1.368,-0.515l0.049,0.005c0,0 0.561,0.15 0.868,0.233c0.122,0.033 0.219,0.124 0.26,0.243c0.138,0.41 0.464,1.373 0.618,1.826c0.05,0.147 0.004,0.31 -0.114,0.41c-0.233,0.196 -0.618,0.52 -0.858,0.723c-0.129,0.109 -0.17,0.29 -0.1,0.443c0.279,0.608 0.635,1.176 1.057,1.69c0.434,0.502 0.933,0.949 1.485,1.327c0.14,0.095 0.325,0.085 0.454,-0.024c0.241,-0.202 0.626,-0.526 0.858,-0.722c0.119,-0.1 0.287,-0.117 0.424,-0.043c0.42,0.228 1.314,0.712 1.694,0.918c0.111,0.06 0.185,0.172 0.196,0.297c0.029,0.317 0.083,0.895 0.083,0.895l-0.004,0.049c-0.044,0.51 -0.315,0.974 -0.739,1.261c-0.424,0.288 -0.955,0.368 -1.445,0.22c-1.772,-0.545 -3.313,-1.581 -4.479,-2.937l-0.027,-0.032Z"
+                      fill={"#f0f3f3"}
+                    />
+                  </g>
+                </svg>
+              </span>
               Botão para comunicação direta com o WhatsApp.
             </li>
             <li className=" w-28">Formulário de Contato</li>
